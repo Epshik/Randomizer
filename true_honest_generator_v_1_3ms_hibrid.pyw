@@ -62,7 +62,6 @@ class TrueHonestGenerator:
         self.entry_winner = tk.Entry(self.window)
         self.entry_winner.pack(side = tk.RIGHT, padx=5, pady=5)
 
-
         self.window.mainloop()
 
     def copy_text_to_clipboard(self):
@@ -162,6 +161,7 @@ class TrueHonestGenerator:
         self.output_text.see(tk.END)
         self.window.update()
 
+    # set winner per click button
     def set_winners_per_click(self):
         try:
             self.WINNERS_PER_CLICK = int(self.entry_winner.get())
